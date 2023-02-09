@@ -20,7 +20,7 @@
 }
 
 .left-part-banner {
-  width: 40%;
+  width: 50%;
 }
 
 .banner-text {
@@ -37,11 +37,12 @@
 
 .banner-description {
   margin-top: 20px;
+  margin-left: 20px;
   margin-bottom: 20px;
   color: #444343;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 20px;
 
 }
 
