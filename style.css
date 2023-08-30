@@ -1,254 +1,411 @@
+
+/* ========== This code is not responsive yet. :( For better result use 18" monitor ============ */
+
 * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* -------------- Similar Style Section -------------- */
+
+.btn {
+    padding: 15px 35px;
+    background-color: #E55473;
+    border-radius: 6px;
+    border: 0;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #80B135;
+    color: black;
+    box-shadow: gray 4px 4px 10px;
+}
+
+.description {
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 18px;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.color {
+    color: #E55473;
 }
 
 
-/* banner styles */
-.banner {
-  background-image: url(./images/banner/banner1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 90vh;
-  color: black;
-  text-align: right;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* -------------- Banner Style Section -------------- */
+
+.banner-section {
+    margin-bottom: 40px;
 }
 
-.left-part-banner {
-  width: 50%;
+.banner-container {
+    background-color: #E554731A;
+    height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
-.banner-text {
-  width: 50%;
-  padding: 250px 200px;
+.banner-text-area {
+    width: 50%;
+    margin: auto;
+    padding-left: 150px;
 }
 
 .banner-title {
-
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
-  font-size: 60px;
+    color: #272727;
+    font-size: 60px;
 }
 
 .banner-description {
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  color: #444343;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-
+    padding: 30px 0px;
 }
 
-.btn-primary {
-  color: #ffff;
-  font-weight: 700;
-  font-size: 20px;
-  border: 0;
-  padding: 18px 35px;
-  height: 64px;
-  border-radius: 5px;
-  background-color: #FD6E0A;
+.banner-image-area {
+    width: 50%;
 }
 
-/* main styles */
-main {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-section {
-  margin-top: 130px;
-}
-
-.My-failures-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 70px;
+.banner-photo {
+    width: 29vw;
+    padding-left: 50px;
+    padding-top: 62px;
 }
 
 
-.section-title {
-  font-weight: 700;
-  font-size: 40px;
+/* -------------- Featured Flowers(F-F) Style Section -------------- */
 
+
+.f-f-container {
+    height: 100vh;
 }
 
-.banner-description {
-  color: #444343;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-
+.f-f-title {
+    padding: 15px;
+    font-size: 35px;
 }
 
-.failure-list li {
-  list-style: none;
+.f-f-description {
+    padding: 10px;
 }
 
-.fa-check {
-  color: #16d887;
+.f-f-text-area {
+    text-align: center;
+    width: 550px;
+    margin: auto;
 }
 
-
-
-/* My Plan */
-.my-Plans-section .plan-title {
-
-  text-align: center;
-  font-weight: 700;
-  font-size: 40px;
-  margin-bottom: 60px;
-
+.f-f-images-area {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
 }
 
-.plan-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.f-f-photo-1 {
+    width: 225px;
+    background-color: rgba(167, 33, 98, 0.15);
+    border-radius: 300px 300px 0px 0px;
+    padding: 50px;
+    margin: 15px;
+    box-shadow: rgb(114, 114, 114) 5px 5px 20px;
 }
 
-.plan-item-description {
-  text-align: center;
+.f-f-photo-2 {
+    width: 250px;
+    background-color: rgba(5, 151, 160, 0.15);
+    border-radius: 300px 300px 0px 0px;
+    padding: 80px 40px;
+    margin: 15px;
+    box-shadow: rgb(114, 114, 114) 5px 5px 20px;
 }
 
-/* customar-review */
-.section-title {
-  margin-bottom: 60px;
+.f-f-photo-3 {
+    width: 207px;
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(71, 125, 17, 0.15);
+    padding: 55px 55px 45px 55px;
+    margin: 15px;
+    box-shadow: rgb(114, 114, 114) 5px 5px 20px;
 }
 
-.customar-review {
-
-  text-align: center;
-
+.f-f-image-text {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
-.review-cotainer {
-  display: flex;
-  gap: 24px;
-}
-
-
-.review {
-  background: #FFFFFF;
-  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
-  border-radius: 5px;
-  padding: 30px;
-}
-
-.review-title {
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-.review-description {
-  color: #757575;
-
-}
-
-/* call now section */
-
-.call-now {
-  margin: 80px 0 80px;
-  background: url(./images/watch.png),
-    linear-gradient(90deg, #f59e0a 0%, rgba(0, 95, 172, 0) 100%);
-  background-blend-mode: overlay;
-  align-items: center;
-  padding: 40px 40px;
-  color: white;
-  border-radius: 8px;
-}
-
-.call-title {
-  font-weight: 600;
-  font-size: 30px;
-  margin-bottom: 25px;
-
-}
-
-.btn-secondary {
-  margin-bottom: 20px;
-  color: #FD6E0A;
-  font-weight: 700;
-  font-size: 20px;
-  border: 0;
-  padding: 18px 35px;
-  width: 160px;
-  height: 64px;
-  border-radius: 5px;
-  background-color: #FFFFFF;
+.f-f-image-title {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 900;
 }
 
 
+/* -------------- Delivery, Local & Support(D-L-S) Style Section -------------- */
 
-/* Footer  */
 
-footer {
-  background-color: black;
+.d-l-s-container {
+    width: 77%;
+    margin: auto;
+    height: 30vh;
+    border-radius: 7px;
+    background: rgba(39, 39, 39, 0.05);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
-.footer {
-  max-width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-  color: #ffffff;
-  padding: 80px 0;
+.d-l-s-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.future {
-  width: 50%;
+.d-l-s-icon {
+    width: 65px;
+    padding: 20px;
+    cursor: pointer;
 }
 
-.future-text {
-  margin: 14px 0;
+.d-l-s-description {
+    font-weight: 700;
 }
 
-.phone {
-  margin: 14px 0;
+
+/* -------------- Hot Deal(H-D) Style Section -------------- */
+
+
+.h-d-container {
+    background-color: rgba(229, 84, 115, 0.05);
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.social-icons {
-  display: flex;
-
-  gap: 20px;
+.h-d-text-area {
+    width: 45%;
+    margin: auto;
+    text-align: center;
 }
 
-.subscribe {
-  width: 50%;
-  padding-left: 300px;
+.h-d-title {
+    padding: 10px;
 }
 
-.subscribe input {
-  margin: 14px 0;
-  padding: 14px;
-  width: 92%;
-  border-radius: 7px;
-  border: 1px solid #ffffff;
-  background-color: transparent;
-  font-size: 18px;
-  color: white;
+.h-d-description {
+    padding: 15px;
 }
 
-/* Button Hover */
-.btn-primary:hover {
 
-  color: #FD6E0A;
-  background-color: #ffff;
-  border: 1px solid #FD6E0A;
+.h-d-images {
+    width: 30%;
 }
 
-.btn-secondary:hover {
-  color: #ffff;
-  background-color: #FD6E0A;
-  border: 1px solid #ffff;
+.h-d-photo {
+    width: 230px;
 }
+
+
+/* -------------- Instagram(Insta) Style Section -------------- */
+
+
+.instagram-section {
+    margin-top: 20px;
+    margin-bottom: 220px;
+}
+
+.insta-container {
+    height: 60vh;
+}
+
+.insta-text-area {
+    text-align: center;
+    width: 45%;
+    margin: auto;
+    padding: 50px;
+}
+
+.insta-title {
+    padding: 20px;
+}
+
+.insta-images {
+    display: flex;
+    justify-content: center;
+}
+
+.insta-photo {
+    width: 250px;
+    margin: 7px;
+    border-radius: 7px;
+    box-shadow: rgb(114, 114, 114) 10px 10px 20px;
+}
+
+
+/* -------------- Latest Deals Style(L-D) Section -------------- */
+
+
+.l-d-container {
+    height: 45vh;
+    background-image: url(assets/images/latest-deal-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 76vw;
+    margin: auto;
+    border-radius: 7px;
+    box-shadow: rgb(114, 114, 114) 5px 5px 50px;
+}
+
+.l-d-texts {
+    text-align: center;
+    padding: 45px;
+}
+
+.l-d-description {
+    padding: 18px;
+    font-size: 17px;
+}
+
+.subscribe-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email {
+    width: 400px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(39, 39, 39, 0.60);
+    font-size: 14px;
+}
+
+input[placeholder="Enter your email here...."] {
+    padding-left: 20px;
+    font-size: 20px
+}
+
+.l-d-btn {
+    margin-left: 20px;
+}
+
+
+/* -------------- Customer Review Style Section -------------- */
+
+
+.customer-review-section {
+    margin: 50px;
+}
+
+.c-r-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.c-r-all-content-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.c-r-main-container {
+    background-color: #363D4E;
+    width: 330px;
+    height: 400px;
+    border-radius: 7px;
+}
+
+.c-r-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.c-r-image {
+    width: 100px;
+    border-radius: 50px;
+    border: 3px solid #A6A57A;
+    margin-top: 15px;
+}
+
+.c-r-name {
+    color: white;
+    font: bold;
+    padding: 10px;
+}
+
+.c-r-profession {
+    color: rgb(180, 178, 178);
+    font-weight: bold;
+}
+
+.white-bg {
+    background-color: white;
+    width: 250px;
+    height: 180px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.c-r-comment-icon {
+    width: 25px;
+    margin-left: 107px;
+    margin-top: 15px;
+}
+
+.c-r-comment-description {
+    padding: 20px;
+}
+
+
+/* -------------- Footer Style Section -------------- */
+
+
+.footer-section {
+    background-color: #111010;
+    height: 40vh;
+    margin-top: 100px;
+}
+
+.footer-container {
+    color: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.footer-title {
+    padding: 20px;
+}
+
+.footer-description {
+    color: rgba(255, 255, 255, 0.90);
+    width: 40%;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.copyright {
+    padding: 15px;
+    color: gray;
+}
+
+
+/* Clean code always looks like it was written by someone who cares. — Robert C. Martin */
+
+/* --------------------------- THE END ----------------------------- */
